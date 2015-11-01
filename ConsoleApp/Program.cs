@@ -49,7 +49,19 @@ namespace ConsoleApp
             Console.ReadKey();
         }
 
+        //Projection query
         private static void ProjectQuery()
+        {
+            using (var context = new NinjaContext())
+            {
+                context.Database.Log = Console.WriteLine;
+                var ninjas = context.Ninjas
+                               .Select(x => new { x.Name, x.DateOfBirth, x.EquipmentOwned }).ToList();
+            }
+        }
+
+        //Projection query2
+        private static void ProjectQuery2()
         {
             using (var context = new NinjaContext())
             {
