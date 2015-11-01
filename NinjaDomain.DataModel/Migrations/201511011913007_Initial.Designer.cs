@@ -13,7 +13,7 @@ namespace NinjaDomain.DataModel.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201511011346001_Initial"; }
+            get { return "201511011913007_Initial"; }
         }
         
         string IMigrationMetadata.Source

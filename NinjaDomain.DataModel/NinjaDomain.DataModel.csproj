@@ -49,15 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201511011346001_Initial.cs" />
-    <Compile Include="Migrations\201511011346001_Initial.Designer.cs">
-      <DependentUpon>201511011346001_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201511011913007_Initial.cs" />
+    <Compile Include="Migrations\201511011913007_Initial.Designer.cs">
+      <DependentUpon>201511011913007_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NinjaContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -67,8 +68,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201511011346001_Initial.resx">
-      <DependentUpon>201511011346001_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201511011913007_Initial.resx">
+      <DependentUpon>201511011913007_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

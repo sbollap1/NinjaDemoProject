@@ -15,7 +15,7 @@ namespace ConsoleApp
         {
             Database.SetInitializer(new NullDatabaseInitializer<NinjaContext>());
             //*** Inserts
-            //InsertNinja();
+            InsertNinja();
             //SimpleNinjaQueries();
             //FindAName();
             //FindByDateOfBirth();
@@ -43,7 +43,7 @@ namespace ConsoleApp
             //SimpleNinjaGraphQueriesLazy();
 
             //*** Projection queries
-            ProjectQuery();
+            //ProjectQuery();
 
             Console.WriteLine("We made a console app");
             Console.ReadKey();
@@ -227,12 +227,12 @@ namespace ConsoleApp
         {
             var ninja = new Ninja
             {
-                Name = "TerriSan", ServedInOniwaban = false, DateOfBirth = new DateTime(1980,1,1), ClanId = 1
+                Name = "TerriSan", ServedInOniwaban = false, DateOfBirth = new DateTime(1980,1,1), ClanId = 5
             };
 
             var ninja2 = new Ninja
             {
-                Name = "JulieLerman",  ServedInOniwaban = false, DateOfBirth = new DateTime(1970, 1, 1), ClanId = 1
+                Name = "JulieLerman",  ServedInOniwaban = false, DateOfBirth = new DateTime(1970, 1, 1), ClanId = 5
             };
 
             //now lets use EF to insert this object

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NinjaDomain.Classes
 {
-    public class Ninja
+    public class Ninja: IModificationHistory
     {
         public Ninja()
         {
@@ -21,5 +21,9 @@ namespace NinjaDomain.Classes
         //public virtual List<NinjaEquipment> EquipmentOwned { get; set; }
         public List<NinjaEquipment> EquipmentOwned { get; set; }
         public DateTime DateOfBirth { get; set; }
+
+        public DateTime DateModified { get; set; }
+        public DateTime DateCreated { get; set; }
+
     }
 }

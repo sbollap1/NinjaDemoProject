@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace NinjaDomain.Classes
 {
-    public class NinjaEquipment
+    public class NinjaEquipment : IModificationHistory
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -14,5 +14,10 @@ namespace NinjaDomain.Classes
         [Required]
         public Ninja Ninja { get; set; }
         public int NinjaId { get; set; }
+
+
+        public DateTime DateModified { get; set; }
+        public DateTime DateCreated { get; set; }
+
     }
 }
